@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roblox Game Guides</title>
+    <style>
+        /* Base Setup & Glow Effects */
+        body {
+            background-color: #0d0d13;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(180deg, #161622 0%, #0d0d13 100%);
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 2px solid #ff0055;
+            box-shadow: 0px 0px 20px rgba(255, 0, 85, 0.3);
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            color: #ff0055;
+            text-shadow: 0 0 10px #ff0055, 0 0 20px #ff0055;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            color: #00ffcc;
+            font-size: 1.2rem;
+            text-shadow: 0 0 8px #00ffcc;
+            margin-top: 10px;
+        }
+
+        /* Container & Cards Layout */
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .game-card {
+            background-color: #161622;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 40px;
+            border-left: 5px solid #00ffcc;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 255, 204, 0.2);
+        }
+
+        .game-card.fnaf {
+            border-left-color: #ff0055;
+        }
+
+        .game-card.fnaf:hover {
+            box-shadow: 0 8px 25px rgba(255, 0, 85, 0.2);
+        }
+
+        .game-title {
+            font-size: 2rem;
+            margin-top: 0;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .fnaf .game-title { color: #ff0055; text-shadow: 0 0 8px #ff0055; }
+        .siren .game-title { color: #00ffcc; text-shadow: 0 0 8px #00ffcc; }
+
+        .badge {
+            font-size: 0.8rem;
+            padding: 5px 10px;
+            border-radius: 20px;
+            background-color: #252538;
+            color: #fff;
+            text-shadow: none;
+        }
+
+        /* Guide Lists */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 12px 0;
+            border-bottom: 1px solid #252538;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        li::before {
+            content: "➔";
+            color: #00ffcc;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+
+        .fnaf li::before {
+            content: "➔";
+            color: #ff0055;
+        }
+
+        .tip-highlight {
+            color: #ffcc00;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #555577;
+            font-size: 0.9rem;
+            border-top: 1px solid #161622;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ROBLOX GAME GUIDES</h1>
+        <div class="subtitle">Master the Games, Beat the Monsters</div>
+    </header>
+
+    <div class="container">
+
+        <div class="game-card fnaf">
+            <div class="game-title">
+                Five Nights at Freddy's <span class="badge">Survival Horror</span>
+            </div>
+            <p>Can you survive until 6 AM? Follow these core tactics to stay alive inside the security office:</p>
+            <ul>
+                <li><span class="tip-highlight">Watch the Doors:</span> Check the lights constantly. Do not close the doors unless you see an animatronic standing right there. Saving power is your key to survival.</li>
+                <li><span class="tip-highlight">Listen Carefully:</span> Audio cues are everything. Heavy footsteps mean Bonnie or Chica are moving close to your hallways. Freddy's laugh means he is progressing forward.</li>
+                <li><span class="tip-highlight">Monitor Foxy:</span> Check Pirate Cove regularly on your camera to keep Foxy stalled. If he disappears, close your left door immediately before he sprints into your room!</li>
+            </ul>
+        </div>
+
+        <div class="game-card siren">
+            <div class="game-title">
+                Siren Head: Legacy <span class="badge">Action / Sandbox</span>
+            </div>
+            <p>People think this game is terrifying, but let's be honest—players bully Siren Head here every single day! Here is how to play:</p>
+            <ul>
+                <li><span class="tip-highlight">The "Scary" Truth:</span> Do not be afraid! Siren Head is basically a punching bag for experienced players. He gets chased down and trolled 24/7.</li>
+                <li><span class="tip-highlight">Use the Environment:</span> Use trees, rocks, and buildings to break his line of sight if he tries to chase you. Vehicles are also great for speeding away or circling around him.</li>
+                <li><span class="tip-highlight">Stick with the Squad:</span> Gather a group of players. It is much easier (and hilariously fun) to distract him, run in circles, and juke his attacks together.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2026 Roblox Guide Hub. Created for Gamers.
+    </footer>
+
+</body>
+</html>
